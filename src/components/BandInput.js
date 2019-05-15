@@ -6,13 +6,13 @@ class BandInput extends Component {
     name: ''
   }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
       name: e.target.value,
     })
   }
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     this.props.addBand(this.state);
     this.setState({
